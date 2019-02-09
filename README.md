@@ -1,6 +1,6 @@
 # MonitoringMotorRacing
 
-## Makefile
+### Makefile
 gcc server.c listlib.c ranklib.c thrlib.c -o $1 -lpthread
 
 ## The project
