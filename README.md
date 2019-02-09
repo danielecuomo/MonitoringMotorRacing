@@ -33,10 +33,12 @@ server-station maintains the ranking of the transited vehicles locally. For each
 All cars are made to 'pass' (along the station ring) to the starting station.
 Race: The starting station, after receiving the SIGUSR1 signal, starts the race.
 In each station, each thread:
+
 • Wait for your vehicle to arrive
 • Update the local ranking
 • It waits a time interval equal to TIME + X where X is chosen randomly in the interval [0, TIME].
 • Forward the car to the corresponding thread in the next station.
+
 If the interaction level is 'S', the current station displays the current ranking. The ranking is displayed when all the cars have passed through the current station for the current lap.
 The start station displays the rankings on each lap regardless of the level value
 interaction.
