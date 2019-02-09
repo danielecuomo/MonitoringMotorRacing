@@ -7,9 +7,11 @@ gcc server.c listlib.c ranklib.c thrlib.c -o $1 -lpthread
 A multi-threaded client / server application that simulates the monitoring system
 or journey times for motor racing. The system consists of a sequence of n detection stations.
 The system consists of three distinct phases.
-### Creating the circuit. The server-station processes are linked together to create a
+### Creating the circuit
+The server-station processes are linked together to create a
 communication ring
-### Cars entry. The client-car processes connect to the circuit and all come to one
+### Cars entry
+The client-car processes connect to the circuit and all come to one
 same server-station, called server-departure, identified as the server with identifier
 lowest among all server-stations.
 ### Race control
